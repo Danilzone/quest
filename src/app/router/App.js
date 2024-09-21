@@ -1,11 +1,19 @@
 import { Route, Routes } from "react-router-dom";
-import { Leading } from "../../pages";
+import { Leading, NoFound } from "../../pages";
+
+import "../../shared/styles/styles.scss";
+
 function App() {
   console.log("Succses!");
 
   return (
     <Routes>
-        <Route exact path="/" element={<Leading />} />
+
+        <Route exact path="/" element={<Leading />} /> {/* Эта страничка по умолчанию */}
+
+
+        <Route exact path="*" element={<NoFound />} /> {/* Эта страничка 404 */}
+
     </Routes>        
   );
 }

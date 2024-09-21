@@ -1,0 +1,17 @@
+
+// размеры макета 1920px
+
+@mixin adapt-font-size($min-font-size, $maket-font-size) {
+    font-size: calc($min-font-size + ($maket-font-size - $min-font-size) * (100vw / 1920px) );
+}
+
+ 
+@mixin adapt-box-width($min-box-width, $maket-box-width) {
+     width: calc($min-box-width + ($maket-box-width - $min-box-width) * (100vw / 1920px));
+}
+  
+ 
+@mixin adapt-box-height($min-box-height, $maket-box-height) {
+    height: calc($min-box-height + ($maket-box-height - $min-box-height) * (100vw / 1920px));
+}
+  
