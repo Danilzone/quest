@@ -9,10 +9,17 @@ export default function Leading() {
     }
 
     return (
-        <div>
-            Leading
+        <div className="wrapper ">
+            
             <Header />
-            <Button text="asasd" color="green" onClick={testFunc} />
+
+            <div className="fullscreen">
+                
+            </div>
+            <div id="ttq" className="fullscreen">
+                
+            </div>
+
         
         </div>
     );

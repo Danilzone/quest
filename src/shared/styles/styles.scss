@@ -1,3 +1,6 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @import './mixins.scss';
 @import './vars.scss';
 
@@ -5,6 +8,82 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: "Inter", sans-serif;
+    color: black;
+
 }
 
 
+// fullscreen
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.fullscreen {
+    display: flex;
+    min-height: 100vh;
+}
+
+// Header
+
+.header {
+    position: fixed;
+    padding-top: 43px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+
+    .logo {
+
+        display: flex;
+        justify-content: center;
+        font-size: 46px;
+        font-weight: 600;
+    }
+
+    .navigation {        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+}
+
+.navtext {
+    font-size: 26px;
+    margin-left: 21px;
+    margin-right: 21px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transition: all 0.3s ease;
+        color: lighten($orange, 30);
+    }
+}
+
+
+._navactive {
+    color: $orange;
+    text-decoration: underline;
+
+    &:hover {
+        color: $orange;
+    }
+
+}
+
+#ttq {
+    background-color: red;
+}

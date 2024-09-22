@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import { Leading, NoFound } from "../../pages";
 
 import "../../shared/styles/styles.scss";
+import "../../shared/styles/adapt.scss";
 
 function App() {
   console.log("Succses!");
