@@ -1,6 +1,9 @@
 import { Button } from "../../../shared";
 import {Header} from "../../../widgets";
-
+import { FaVk } from "react-icons/fa";
+import { FaTelegramPlane } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
+import project01 from '../../../shared/assets/zvezda.png'
 
 export default function Leading() {
 
@@ -17,6 +20,11 @@ export default function Leading() {
 
                 <section className="home" id="home">
                     <div className="home-content">
+
+                        <div className="img">
+                            <img src={project01}></img>
+                        </div>
+                        
                         <h1>Квест "Мы помним!"</h1>
                         <div className="text-animate">
                             <h3>Блокада Ленинграда</h3>
@@ -28,6 +36,12 @@ export default function Leading() {
 
                         <div className="btn-box">
                             <a href="#" className="btn">Пройти тест</a>
+                        </div>
+
+                        <div className="home-sci">
+                            <a href="#"><FaVk/></a>
+                            <a href="#"><FaTelegramPlane/></a>
+                            <a href="#"><FaGithub/></a>
                         </div>
                     </div>
                 </section>
