@@ -139,3 +139,4 @@ import { xzWidget } from './xzWidget'; // типо ещё какой то вид
 
 export { NewWidget, xzWidget };
 ```
+.
