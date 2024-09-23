@@ -14,7 +14,24 @@ export default function Leading() {
             <Header />
 
             <div className="fullscreen">
-                
+
+                <section className="home" id="home">
+                    <div className="home-content">
+                        <h1>Квест "Мы помним!"</h1>
+                        <div className="text-animate">
+                            <h3>Блокада Ленинграда</h3>
+                        </div>
+                        <p>Данный квест расскажет о событиях, произошедших в Ленинграде
+                            во время Великой Отечественной войны. А после изучения всех материалов
+                            участники смогут пройти тест, который покажет их знания о блокаде Ленинграда
+                        </p>
+
+                        <div className="btn-box">
+                            <a href="#" className="btn">Пройти тест</a>
+                        </div>
+                    </div>
+                </section>
+
             </div>
             <div id="ttq" className="fullscreen">
                 

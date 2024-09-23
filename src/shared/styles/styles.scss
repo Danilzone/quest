@@ -1,5 +1,5 @@
 // fonts
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @import './mixins.scss';
 @import './vars.scss';
@@ -7,49 +7,51 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
-    font-family: "Inter", sans-serif;
-    color: black;
-
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
 }
 
+:root {
+    --bg-color: #fff;
+    --second-bg-color:#eaeaea;
+    --text-color: #000;
+    --main-color: #fe9206;
+}
 
 // fullscreen
 
-html, body {
-    height: 100%;
+html {
+    font-size: 62.5%;
+    overflow: hidden;
 }
 
-.wrapper {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-
-.fullscreen {
-    display: flex;
-    min-height: 100vh;
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
 }
 
 // Header
 
 .header {
     position: fixed;
-    padding-top: 43px;
-    padding-bottom: 10px;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-color: #fff;
-
+    padding: 2rem 9%;
+    background: #fff;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 
 
     .logo {
-
-        display: flex;
-        justify-content: center;
-        font-size: 46px;
+        font-size: 7rem;
+        color: var(--text-color);
         font-weight: 600;
     }
 
@@ -62,28 +64,120 @@ html, body {
 }
 
 .navtext {
-    font-size: 26px;
-    margin-left: 21px;
-    margin-right: 21px;
-    transition: all 0.3s ease;
+    font-size: 3rem;
+    color: var(--text-color);
+    font-size: 500;
+    margin-left: 3.5rem;
+    transition: .3s;
 
     &:hover {
-        transition: all 0.3s ease;
-        color: lighten($orange, 30);
+        transition: .3s;
+        color: var(--main-color);
     }
 }
 
 
 ._navactive {
-    color: $orange;
+    color: var(--main-color);
     text-decoration: underline;
 
     &:hover {
-        color: $orange;
+        color: var(--main-color);
     }
-
 }
 
-#ttq {
-    background-color: red;
+section {
+    position: relative;
+    top: 20rem;
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+
+    .home {
+        display: flex;
+        align-items: center;
+        padding: 0 9%;
+    }
+
+    .home-content {
+        max-width: 60rem;
+    }
+
+    .home-content h1 {
+        position: relative;
+        display: inline-block;
+        font-size: 5.6rem;
+        font-weight: 700;
+        line-height: 1.3;
+    }
+
+    .home-content .text-animate {
+        position: relative;
+        width: 34.5rem;
+    }
+
+    .home-content .text-animate h3{
+        font-size: 3.2rem;
+        font-weight: 700;
+        color: transparent;
+        -webkit-text-stroke: .7px var(--main-color);
+    }
+
+    .home-content p {
+        position: relative;
+        font-size: 1.8rem;
+        margin: 2rem 0 4rem;
+    }
+}
+
+.btn-box .btn {
+    position: relative;
+    left: 17rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    height: 100%;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .8rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: var(--text-colot);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box .btn:hover {
+    color: var(--main-color);
+}
+
+.btn-box .btn:nth-child(2) {
+    background: transparent;
+    color: var(--main-color);
+}
+
+.btn-box .btn:nth-child(2):hover {
+    color: var(--text-colot);
+}
+
+.btn-box .btn:nth-child(2)::before {
+    background: var(--main-color);
+}
+
+.btn-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box .btn:hover::before {
+    width: 100%;
 }
