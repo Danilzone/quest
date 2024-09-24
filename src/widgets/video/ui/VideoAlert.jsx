@@ -1,17 +1,36 @@
 
-
+import ReactPlayer from 'react-player';
+import { Link } from 'react-router-dom';
+import { Button } from '../../../shared';
 export default function VideoAlert() {
     return (
- 
-        <div style={{ width: '100%', height: 'auto', position: 'relative', paddingBottom: '56.25%' }}>
-        <video style={{ position: 'absolute', width: '100%', height: '100%' }} controls>
-          <source src="https://vk.com/video283805080_456239459?list=ln-MWKfdQwmgjF2VXMaXO" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      
+
+        <div className="video">
+
+            <iframe
+                width="1440"
+                height="820"
+                src="https://rutube.ru/play/embed/ed58b2df00904f264567a50892c29255/?p=ZTl9VxpP_DbDfCllybPh3Q"
+                frameBorder="0"
+                allow="clipboard-write; autoplay"
+                webkitAllowFullScreen
+                mozallowfullscreen
+                allowFullScreen
+
+            ></iframe>
+
+            <Button
+                to="/" 
+                text="Вернуться назад"
+                color="none"
+                borderColor="orange"
+                textColor="orange"
+                mt20
+            />
+
+        </div>
+    
+
     )
 }
 
-{/* <iframe src="https://vk.com/video_ext.php?oid=283805080&id=456239459&hd=3&hash=839caefd187662f8&autoplay=1" width="1280" height="720" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>    ) */}
-//

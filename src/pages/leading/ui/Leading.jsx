@@ -80,6 +80,7 @@ export default function Leading() {
                             textColor="orange"
                             text="Посмотреть видео" 
                             hoverOrange
+                            to="video-report"
                         />
 
                     </div>
