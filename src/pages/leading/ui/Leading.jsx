@@ -15,15 +15,12 @@ export default function Leading() {
         <div className="wrapper ">
             
             <Header />
-
-            <div className="fullscreen">
+            
+            <div className="fullscreen _bg">
 
                 <section className="home" id="home">
+                    
                     <div className="home-content">
-
-                        <div className="img">
-                            <img src={project01}></img>
-                        </div>
                         
                         <h1>Квест "Мы помним!"</h1>
                         <div className="text-animate">
@@ -43,13 +40,19 @@ export default function Leading() {
                             <a href="#"><FaTelegramPlane/></a>
                             <a href="#"><FaGithub/></a>
                         </div>
-                    </div>
-                </section>
+                   </div>
 
+                </section>
             </div>
-            <div id="ttq" className="fullscreen">
+
+
+            <div className="fullscreen">
                 
+                <section className="video-report" id="video-report">
+
+                </section>
             </div>
+            
 
         
         </div>

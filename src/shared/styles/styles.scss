@@ -11,7 +11,8 @@
     text-decoration: none;
     border: none;
     outline: none;
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
+    
     font-family: "Poppins", sans-serif;
 }
 
@@ -26,12 +27,26 @@
 
 html {
     font-size: 62.5%;
-    overflow: hidden;
+    // overflow: hidden;
+    
 }
 
 body {
     background: var(--bg-color);
     color: var(--text-color);
+}
+
+
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.fullscreen {
+    display: flex;
+    min-height: 100vh;
 }
 
 // Header
@@ -41,7 +56,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 1rem 9%;
     background: #fff;
     display: flex;
     justify-content: space-between;
@@ -86,6 +101,15 @@ body {
     }
 }
 
+
+
+._bg {
+    background: url('../assets/zvezda.png');
+    background-size: cover;
+    background-position: center
+}
+
+
 section {
     position: relative;
     top: 20rem;
@@ -96,9 +120,6 @@ section {
         display: flex;
         align-items: center;
         padding: 0 9%;
-        background: 'url(${background})';
-        background-size: cover;
-        background-position: center
     }
 
     .home-content {
