@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { Leading, NoFound, VideoReport } from "../../pages";
+import { Lapshov, Leading, NoFound, Sevastyanov, VideoReport } from "../../pages";
 
 import "../../shared/styles/styles.scss";
 import "../../shared/styles/adapt.scss";
@@ -11,7 +11,10 @@ function App() {
     <Routes>
 
         <Route exact path="/" element={<Leading />} /> {/* Эта страничка по умолчанию */}
-        <Route exact path="/video-report" element={<VideoReport />} /> {/* Эта страничка по умолчанию */}
+        <Route exact path="/video-report" element={<VideoReport />} /> 
+
+        <Route exact path="/Lapshov" element={<Lapshov />} /> 
+        <Route exact path="/Sevastyanov" element={<Sevastyanov />} /> 
 
 
         <Route exact path="*" element={<NoFound />} /> {/* Эта страничка 404 */}
