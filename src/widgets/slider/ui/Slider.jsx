@@ -59,14 +59,14 @@ export default function SoldateSlider() {
             </div>
 
             <div className="slide">
-                <GalerySoldate img='Makarenkov' name="Григорий Андреевич Заика" description="Во время прорыва блокады Ленинграда, рота Заики " />
+                <GalerySoldate img='Makarenkov' name="Макаренков Иван Михайлович" description="Во время прорыва блокады Ленинграда, рота Заики " />
                 <div className="btn-about">
                     <Link to="/quest/Makarenkov" className="about">Узнать больше</Link>
                 </div>
             </div>
 
             <div className="slide">
-                <GalerySoldate img='Tipanov' name="Типанов" description="Вел бой над городом с фашисткими бомбардировщиком. Когда закончились патроны, направил свой самолёт" />
+                <GalerySoldate img='Tipanov' name="Типанов Александр Фёдорович" description="Вел бой над городом с фашисткими бомбардировщиком. Когда закончились патроны, направил свой самолёт" />
                 <div className="btn-about">
                     <Link to="/quest/Tipanov" className="about">Узнать больше</Link>
                 </div>
@@ -80,7 +80,7 @@ export default function SoldateSlider() {
             </div>
 
             <div className="slide">
-                <GalerySoldate img='Lapshov' name="Алексей Севастьянов" description="Вел бой над городом с фашисткими бомбардировщиком. Когда закончились патроны, направил свой самолёт" />
+                <GalerySoldate img='Lapshov' name="Лапшов Николай Иванович" description="Вел бой над городом с фашисткими бомбардировщиком. Когда закончились патроны, направил свой самолёт" />
                 <div className="btn-about">
                     <Link to="/quest/Lapshov" className="about">Узнать больше</Link>
                 </div>

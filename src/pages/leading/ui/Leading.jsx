@@ -9,6 +9,7 @@ import { BiSolidSkipNextCircle } from "react-icons/bi";
 
 export default function Leading() {
 
+    const [video, setVideo] = useState(false);
 
     const [backgroundImage, setBackgroundImage] = useState('001');
   
@@ -23,7 +24,6 @@ export default function Leading() {
       
       return () => clearInterval(interval);
     }, []);
-
 
 
     return (
@@ -63,7 +63,7 @@ export default function Leading() {
 
             <div className={`fullscreen bg-${backgroundImage}`}>
                 <div className="bluer_black">
-                    
+
                     <div className="offer" id="video-report">
 
                         <div className="offer-text">
@@ -80,7 +80,6 @@ export default function Leading() {
                             textColor="orange"
                             text="Посмотреть видео" 
                             hoverOrange
-
                         />
 
                     </div>
