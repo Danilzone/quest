@@ -1,15 +1,30 @@
 import { Button } from "../../../shared";
-import {Header} from "../../../widgets";
+import { useEffect, useState } from "react";
+import {Header, SoldateSlider} from "../../../widgets";
 import { FaVk } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
-import project01 from '../../../shared/assets/zvezda.png'
+import { BiSolidSkipNextCircle } from "react-icons/bi";
+
 
 export default function Leading() {
 
-    const testFunc = () => {
-        console.log("a");
-    }
+
+    const [backgroundImage, setBackgroundImage] = useState('001');
+  
+    useEffect(() => {
+      const imageList = ['001', '002', '003', '004', '005', '006', '007', '008']; // список изображений, которые вы хотите использовать
+      let currentIndex = 0;
+      
+      const interval = setInterval(() => {
+        setBackgroundImage(imageList[currentIndex]);
+        currentIndex = (currentIndex + 1) % imageList.length;
+      }, 3000);
+      
+      return () => clearInterval(interval);
+    }, []);
+
+
 
     return (
         <div className="wrapper ">
@@ -17,7 +32,7 @@ export default function Leading() {
             <Header />
             
             <div className="fullscreen _bg">
-
+           
                 <section className="home" id="home">
                     
                     <div className="home-content">
@@ -46,14 +61,51 @@ export default function Leading() {
             </div>
 
 
-            <div className="fullscreen">
-                
-                <section className="video-report" id="video-report">
+            <div className={`fullscreen bg-${backgroundImage}`}>
+                <div className="bluer_black">
+                    
+                    <div className="offer" id="video-report">
 
-                </section>
+                        <div className="offer-text">
+                            Узнать больше про
+                            <div className="_text">Блокаду&nbsp;<p className="_text-orange">Ленинграда</p></div>
+                            <br/>
+
+                        </div>
+                        
+                        <Button 
+                            icon={<BiSolidSkipNextCircle className="icon-send-video" color="#FF930E" size={36}/>}
+                            color="none"
+                            borderColor="orange"
+                            textColor="orange"
+                            text="Посмотреть видео" 
+                            hoverOrange
+
+                        />
+
+                    </div>
+
+                </div>
             </div>
-            
 
+
+            <div className="fullscreen _bg2">
+                <div className="blur">
+                </div>
+                <div className="slider-main"  id="galery">
+                    <SoldateSlider />
+
+                    <div className="super-text">
+                        Никто не забыт
+                        <p>Ничто не забыто</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div className="fullscreen RED">
+
+            </div>
         
         </div>
     );
