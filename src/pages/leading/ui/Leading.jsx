@@ -92,7 +92,7 @@ export default function Leading() {
             <div className="fullscreen _bg2">
                 <div className="blur">
                 </div>
-                <div className="slider-main"  id="galery">
+                <div className="slider-main" id="galery">
                     <SoldateSlider />
 
                     <div className="super-text">
@@ -215,6 +215,67 @@ export default function Leading() {
                     </div>
                 </div>
             </div>
+
+
+            <div className="fullscreen" id="chronicle">
+                <div className="chronicle">
+                    <h2 className="heading" >Летопись</h2>
+                    
+                        <div className="chronicle-blocks">
+
+                            <div className="chronicle-block">
+                                <div className="title">
+                                <b className="orange">▎</b>Блокадная книга
+                                </div>
+                                <div className="description">
+                                <b>Описание:</b><br />
+                                    Сборник воспоминаний, составленный из рассказов людей, переживших блокаду Ленинграда. Эта книга представляет собой мощный документ эпохи, в котором отражены не только факты, но и глубокие человеческие эмоции. Гранин и Ларионова собирали свидетельства, чтобы сохранить память о страданиях и героизме жителей города. Каждое воспоминание — это отдельная история о мужестве, любви и стойкости в условиях невыносимых лишений. Читатель погружается в атмосферу блокады, ощущая холод, голод и страх, но также и надежду на победу.
+                                </div>
+                            </div>
+                   
+                            <div className="chronicle-block">
+                                <div className="title">
+                                <b className="orange">▎</b><p className="_middle">"Завтра была война" — Борис Васильев</p>
+                                </div>
+                                <div className="description">
+                                <b>Описание:</b><br />
+                                    Роман, рассказывающий о молодежи, живущей в условиях блокады. Главные герои — подростки, которые сталкиваются с реалиями войны, мечтая о будущем и свободе. Через призму их жизни Васильев показывает, как война меняет судьбы и разрушает мечты. Молодежь стремится сохранить свою человечность и надежду, несмотря на ужасные условия блокады. Книга затрагивает темы дружбы, любви и потерь, подчеркивая, что даже в самые трудные времена остается место для человечности и мечты о мире.
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    <div className="about-chronicle">
+                        <div className="title">—</div>
+                        <p>
+                            Эти произведения являются важными свидетельствами о ленинградской блокаде, сохраняя память о трагедии и героизме людей, которые пережили эти страшные годы. Они помогают современным читателям понять масштабы страданий и стойкости, проявленных жителями города в условиях войны.
+                        </p>
+                        <div className="title">&nbsp;</div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div className="fullscreen">
+                <div className="center-video" id="audiogid">
+                <h2 className="heading">Аудиогид</h2>
+
+                    <iframe
+                        width="720"
+                        height="405"
+                        src="https://rutube.ru/play/embed/63e9569bec870343b22366e8c6f5da44"
+                        frameBorder="0"
+                        allow="clipboard-write; autoplay"
+                        webkitAllowFullScreen
+                        mozallowfullscreen
+                        allowFullScreen
+                    ></iframe>
+                    
+
+                </div>
+            </div>
+
 
         </div>
     );
