@@ -1,6 +1,5 @@
 
-import ReactPlayer from 'react-player';
-import { Link } from 'react-router-dom';
+
 import { Button } from '../../../shared';
 export default function VideoAlert() {
     return (

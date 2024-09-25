@@ -1,4 +1,4 @@
-import Sevastyanov from "./ui/Lapshov";
+import Sevastyanov from "./ui/Sevastyanov";
 
 export {
     Sevastyanov
