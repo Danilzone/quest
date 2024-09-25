@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { Lapshov, Leading, NoFound, Sevastyanov, Makarenkov, Tipanov, Zaika, VideoReport } from "../../pages";
+import { Lapshov, Leading, NoFound, Sevastyanov, Makarenkov, Tipanov, Zaika, VideoReport, Quest } from "../../pages";
 
 import "../../shared/styles/styles.scss";
 import "../../shared/styles/adapt.scss";
@@ -18,6 +18,7 @@ function App() {
         <Route exact path="/Makarenkov" element={<Makarenkov />} />
         <Route exact path="/Tipanov" element={<Tipanov />} /> 
         <Route exact path="/Zaika" element={<Zaika />} /> 
+        <Route exact path="/quest" element={<Quest />} /> 
 
 
         <Route exact path="*" element={<NoFound />} /> {/* Эта страничка 404 */}

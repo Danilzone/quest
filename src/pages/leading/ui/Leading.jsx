@@ -5,6 +5,7 @@ import { FaVk } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { BiSolidSkipNextCircle } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 
 export default function Leading() {
@@ -47,7 +48,7 @@ export default function Leading() {
                         </p>
 
                         <div className="btn-box">
-                            <a href="#" className="btn">Пройти тест</a>
+                            <Link to="/quest" className="btn">Пройти тест</Link>
                         </div>
 
                         <div className="home-sci">
