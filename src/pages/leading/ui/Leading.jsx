@@ -54,7 +54,7 @@ export default function Leading() {
                         <div className="home-sci">
                             <a href="#"><FaVk/></a>
                             <a href="#"><FaTelegramPlane/></a>
-                            <a href="#"><FaGithub/></a>
+                            <a href="https://github.com/Danilzone/quest"><FaGithub/></a>
                         </div>
                    </div>
 
